@@ -77,14 +77,14 @@ function Filme() {
           <p>{filme.vote_average}</p>
           <h3>Data de Lançamento</h3>
           <p>{filme.release_date}</p>
-        </div>
-        <div className="area-buttons">
-          <button onClick={salvarFilme}>Salvar</button>
-          <button>
-            <a href={`https://www.youtube.com/results?search_query=${filme.title} Trailer`} target="blank" rel="noreferrer">
-              Trailer
-            </a>
-          </button>
+          <div className="area-buttons">
+            <button onClick={salvarFilme}>Salvar</button>
+            <button>
+              <a href={`https://www.youtube.com/results?search_query=${filme.title} Trailer`} target="blank" rel="noreferrer">
+                Trailer
+              </a>
+            </button>
+          </div>
         </div>
       </div>
     );

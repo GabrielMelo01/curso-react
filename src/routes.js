@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Filme from "./pages/Filme";
 import Header from "./Components/Header";
 import NotFound from "./pages/NotFound";
+import Favoritos from "./pages/Favoritos";
 
 function RoutesApp() {
     return (
@@ -11,6 +12,7 @@ function RoutesApp() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/filme/:id" element={<Filme/>}/>
+                <Route path="/favoritos" element={<Favoritos/>}/>
 
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
