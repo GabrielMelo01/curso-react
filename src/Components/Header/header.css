@@ -4,7 +4,13 @@ header {
     justify-content: space-around;
     width: 100%;
     height: 60px;
-    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0); /* Inicialmente transparente */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    z-index: 1000; /* Garante que o header fique sobre outros elementos */
 }
 
 .logo {
@@ -20,6 +26,10 @@ header {
     cursor: pointer;
     background-color: #fff;
     padding: 5px 14px;
-    color: #000000;
+    color: #000;
     border-radius: 4px;
+}
+
+.meus-filmes {
+    padding-top: 80px; /* Adiciona um padding para que o conteúdo não fique atrás do header */
 }
